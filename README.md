@@ -86,7 +86,9 @@ The component attaches a WebGL canvas and runs a fragment shader that accumulate
   [noiseAmount]="noiseAmount"
   [distortion]="distortion"
   [styleClass]="styleClass"
-></om-light-rays>
+>
+  <ng-content></ng-content>
+</om-light-rays>
 ```
 
 ### Inputs
@@ -124,7 +126,9 @@ The component attaches a WebGL canvas and runs a fragment shader that accumulate
   [followMouse]="false"
   [noiseAmount]="0.03"
   styleClass="cover"
-></om-light-rays>
+>
+  <ng-content></ng-content>
+</om-light-rays>
 ```
 
 **Interactive spotlight**
@@ -139,7 +143,9 @@ The component attaches a WebGL canvas and runs a fragment shader that accumulate
   [rayLength]="3"
   [lightSpread]="0.9"
   styleClass="cover"
-></om-light-rays>
+>
+  <p>Light Rays</p>
+</om-light-rays>
 ```
 
 ## Styling
